@@ -62,7 +62,7 @@ const Dashboard = () => {
         <h3 className="title-md mb-4">Your Appointments</h3>
         
         {appointments.length === 0 ? (
-          <div className="empty-state text-center p-8 bg-gray-50 rounded border border-gray-200">
+          <div className="empty-state text-center p-8">
             <AlertCircle size={48} className="mx-auto text-muted mb-4" />
             <p className="text-muted mb-4">You have no upcoming appointments.</p>
             <a href="/doctors" className="btn btn-primary">Find a Doctor</a>

@@ -42,3 +42,18 @@
 .nav-link:hover {
   color: var(--primary);
 }
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: var(--transition);
+  padding: 0.5rem;
+  border-radius: var(--radius-full);
+}
+
+.theme-toggle:hover {
+  color: var(--primary);
+  background-color: var(--bg-color);
+}

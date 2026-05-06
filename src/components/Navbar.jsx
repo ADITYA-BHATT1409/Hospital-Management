@@ -1,10 +1,12 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Activity } from 'lucide-react';
+import { useTheme } from '../context/ThemeContext';
+import { Activity, Moon, Sun } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
   const { user, signOut } = useAuth();
+  const { isDarkMode, toggleTheme } = useTheme();
   const navigate = useNavigate();
 
   const handleSignOut = async () => {
@@ -20,6 +22,9 @@ const Navbar = () => {
           <span>HealthSync</span>
         </Link>
         <div className="navbar-links">
+          <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Dark Mode">
+            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
           <Link to="/doctors" className="nav-link">Find Doctors</Link>
           {user ? (
             <>

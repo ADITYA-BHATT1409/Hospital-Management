@@ -56,3 +56,11 @@
 .text-danger { color: var(--danger); }
 .hover\:bg-danger:hover { background-color: var(--danger); }
 .hover\:text-white:hover { color: white; }
+
+.empty-state {
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.mx-auto { margin-left: auto; margin-right: auto; }

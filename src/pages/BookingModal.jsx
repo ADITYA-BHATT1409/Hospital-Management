@@ -188,7 +188,7 @@ const BookingModal = () => {
           ) : (
             <div className="slots-grid">
               {availableSlots.length === 0 ? (
-                <div className="col-span-full text-muted p-4 bg-gray-50 text-center rounded">
+                <div className="col-span-full text-muted p-4 text-center rounded" style={{ backgroundColor: 'var(--bg-color)', border: '1px solid var(--border-color)' }}>
                   No availability on this date. Please select another date.
                 </div>
               ) : (
