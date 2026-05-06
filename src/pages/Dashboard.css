@@ -1,0 +1,58 @@
+.dashboard-container {
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.appointment-card {
+  padding: 1.5rem;
+}
+
+.appt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appt-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  color: var(--primary);
+}
+
+.badge-default {
+  background-color: var(--bg-color);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+}
+
+.appt-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .appt-body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.appt-doctor, .appt-time {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.text-sm { font-size: 0.875rem; }
+.border-danger { border-color: var(--danger); }
+.text-danger { color: var(--danger); }
+.hover\:bg-danger:hover { background-color: var(--danger); }
+.hover\:text-white:hover { color: white; }
